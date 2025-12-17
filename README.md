@@ -1,2 +1,2 @@
-# monthly-expense-tracker
-A responsive expense tracker built with vanilla JavaScript
+# Monthly Expense Tracker
+A responsive expense tracker web application that provides real-time statistic tracking and data persistence across browser sessions.

@@ -11,3 +11,8 @@ A responsive expense tracker web application that provides real-time statistic t
 - View real-time expense statistics in the results section
 - Data persistence via local storage
 
+## Tech Stack
+- HTML5
+- CSS3
+- Vanilla JavaScript
+

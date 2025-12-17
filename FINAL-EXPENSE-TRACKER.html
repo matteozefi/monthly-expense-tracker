@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Expense Tracker</title>
+    <link rel="stylesheet" href="FINAL-EXPENSE-TRACKER.css">
+    <link rel="icon" type="image/png" href="images/money-logo.png">
+</head>
+<body>
+    <h1 id="webTitle">Monthly Expense Tracker</h1>
+    
+    <main>
+        <div id="inputContainer">
+            <h2 class="sectionTitle">Add Expense Information</h2>
+            <form id="inputForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" name="amount" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <select name="category" id="category" required>
+                        <option value="" disabled selected>Select category</option>
+                        <option value="Food">Food</option>
+                        <option value="Transportation">Transportation</option>
+                        <option value="Utilities">Utilities</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="addExpenseBtn">Add Expense</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="expensesContainer">
+            <h2 class="sectionTitle">Expenses List</h2>
+            <div id="expensesList">
+                <!-- Expenses will be dynamically added here -->
+            </div>
+            <div id="buttons-group">    
+                <button id="organizeDateBtn">Organize Expenses By Date</button>
+                <button id="organizeAmountBtn">Organize Expenses By Amount</button>
+                <button id="clearExpensesBtn">Clear All Expenses</button>
+            </div>
+        </div>
+
+        <div id="resultsContainer">
+            <h2 class="sectionTitle">Results</h2>
+            <div id="results-group">
+                <p id="totalExpenses">Total Expenses: <span class="amount">$0.00</span></p>
+                <p id="averageExpense">Average Expense: <span class="amount">$0.00</span></p>
+                <p id="highestExpense">Highest Expense: <span class="amount">$0.00</span></p>
+                <p id="lowestExpense">Lowest Expense: <span class="amount">$0.00</span></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p id="copyright">Created By Matteo Zefi | &copy; 2025</p>
+    </footer>
+    <script src="FINAL-EXPENSE-TRACKER.js"></script>
+</body>
+</html>

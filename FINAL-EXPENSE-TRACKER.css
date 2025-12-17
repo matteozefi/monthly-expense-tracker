@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffafa;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Typography */
+#webTitle {
+    text-align: center;
+    margin: 60px 0 40px;
+}
+
+.sectionTitle {
+    text-align: center;
+}
+
+/* Shared container styles */
+#inputContainer,
+#expensesContainer,
+#resultsContainer {
+    width: 35vw;
+    margin: 30px auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#inputContainer {
+    margin-top: 0;
+}
+
+#resultsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form styles */
+#inputForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+.form-group input,
+.form-group select {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Button styles - consolidated */
+button {
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#addExpenseBtn {
+    background-color: #28a745;
+}
+
+#organizeDateBtn,
+#organizeAmountBtn {
+    background-color: #007bff;
+}
+
+#clearExpensesBtn,
+.deleteBtn {
+    background-color: #dc3545;
+}
+
+.deleteBtn {
+    padding: 5px 10px;
+    font-size: 1.0rem;
+}
+
+/* Results and expenses display */
+#results-group {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    width: 75%;
+}
+
+.amount {
+    font-weight: bold;
+    color: #007bff;
+}
+
+#buttons-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#expensesList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.expenseCard {
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 70%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #f1f1f1;
+    margin-top: 40px;
+}
+
+/* Media Queries */
+
+/* Tablets and smaller laptops */
+@media (max-width: 1024px) {
+    #inputContainer,
+    #expensesContainer,
+    #resultsContainer {
+        width: 60vw;
+    }
+
+    #webTitle {
+        margin: 50px 0;
+        font-size: 1.8rem;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    #inputContainer,
+    #expensesContainer,
+    #resultsContainer {
+        width: 80vw;
+    }
+
+    #webTitle {
+        margin: 40px 0;
+        font-size: 1.5rem;
+    }
+
+    .expenseCard {
+        width: 90%;
+    }
+
+    #results-group {
+        width: 90%;
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    #inputContainer,
+    #expensesContainer,
+    #resultsContainer {
+        width: 95vw;
+        padding: 15px;
+    }
+
+    #webTitle {
+        margin: 30px 0;
+        font-size: 1.3rem;
+    }
+
+    .sectionTitle {
+        font-size: 1.2rem;
+    }
+
+    .form-group {
+        font-size: 1rem;
+    }
+
+    .expenseCard {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    #results-group {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}

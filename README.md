@@ -21,3 +21,6 @@ A responsive expense tracker web application that provides real-time statistic t
 1. Clone the repository
 2. Open 'index.html' in your browser (or open it via live server if you use VSCode)
 3. Start Tracking Expenses
+
+## Live Demo
+https://matteozefi.github.io/monthly-expense-tracker/
